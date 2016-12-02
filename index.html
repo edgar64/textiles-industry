@@ -1,0 +1,100 @@
+<!--
+  AUTHOR: Edgar Bernal
+  DATE  : 2016 June 19
+  CLASS : CIS 89A
+-->
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cost of Fast Fashion</title>
+    
+<!-- CSS FILES -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="dependencies/d3.geomap.css">
+    <link rel="stylesheet" type="text/css" href="dependencies/d3.slider.css">
+    <link rel="stylesheet" type="text/css" href="geomap.css">
+    <link rel="stylesheet" href="style.css">
+    
+<!-- JS FILES -->
+    <script type= "text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+    <script type= "text/javascript" src="dependencies/d3.geomap.dependencies.min.js"></script>
+    <script type= "text/javascript" src="dependencies/d3.geomap.js"></script>
+    <script type= "text/javascript" src="dependencies/d3.slider.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700' rel='stylesheet' type='text/css'>
+  </head>
+  
+  <body>
+
+    <header class="main-header shadow" id="top">
+      <h1>Environmental Cost of the Fashion Industry</h1>
+    </header>
+
+    <!-- Image container -->
+    <div class="flex-container shadow">
+      <div class="sub-container">
+        <p>
+          There is a very large lack of sustainability in the textile industry. 
+          Rapid consumption has increased both air and water pollution associated 
+          with the manufacturing of clothing, particularly harming developing 
+          nations tasked with its fabrication and exportation. Since clothing 
+          is being consumed so quickly, it is also more disposable than ever before, 
+          with the US alone throwing away 11 million tons of clothing every year. 
+          Being more conscious of our clothing purchases can help us fight 
+          this largely ignored contributor to global warming.
+        </p>
+        <br><br>
+        <center>
+          <div class="row" id="interactivity-row">
+            <!-- map and tooltip-->
+            <div class="col-md-12" id="map-container">
+                <script type="text/javascript" src="geomap.js"></script>
+                <div id="map"></div>
+            </div>
+          </div>
+        </center>
+      </div>
+    </div>
+    
+    <div class="container shadow">
+      <header class="section-header">
+        <h3>Site Info</h3>
+      </header>
+      <dl>
+        <dt>Created by</dt>
+        <dd><small>
+          Edgar Bernal-Sanchez and Celine Peña
+        </small></dd>
+        <br>
+        <dt>Sources</dt>
+        <dd><small>
+          See GitHub for source files: <a href="https://github.com/edgar64/textile-industry" target="_blank">GitHub.com</a>
+        </small></dd>
+        <dd><small>
+            
+        </small></dd>
+        <br>
+        <dt>References</dt>
+        <dd><small>
+          <a href="https://www.wto.org/english/res_e/statis_e/its2014_e/its14_merch_trade_product_e.htm" target="_blank">Clothing exports of selected economies, 1990-2013 - WTO</a>
+        </small></dd>
+      </dl>
+
+    </div>
+    
+
+    <!--   Page footer -->
+    <footer class="shadow">
+      <p><a href="#top">Top of Page</a></p>
+<!--      <p>© 2016 Edgar Bernal</p>-->
+<!--      <p><a href="contact.html">Contact Me</a></p>-->
+    </footer>
+
+  </body>
+  
+  <script>
+    imageMapResize("map#prizes-map");
+  </script>
+</html>
